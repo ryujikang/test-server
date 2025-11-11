@@ -1,3 +1,7 @@
 spring:
   application:
     name: test-server
+
+aws:
+  access-key: abcdefg
+  secret-key: hijklmn
