@@ -26,6 +26,7 @@ jobs:
 
           script: |
             cd /home/ubuntu/test-server
+            rm -rf src/main/resources/application.yaml
             git pull origin main
             echo "$APPLICATION_PROPERTIES" > src/main/resources/application.yaml
             ./mvnw clean package
